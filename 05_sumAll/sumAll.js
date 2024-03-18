@@ -13,8 +13,12 @@ const sumAll = function(firstNumber, secondNumber) {
     
         }
 
-    } else if (firstNumber < 0 || secondNumber < 0) {
+    } else if(firstNumber < 0 || secondNumber < 0) {
         
+        return "ERROR";
+
+    } else if(typeof firstNumber !== "number" || typeof secondNumber !== "number") {
+
         return "ERROR";
 
     } else {
