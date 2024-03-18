@@ -1,8 +1,8 @@
 const convertToCelsius = function(temp) {
 
-  temp -= 32;
+  let tempCelsius = (temp - 32) / 1.79999999;
 
-  return temp;
+  return Math.round(tempCelsius * 10) / 10;
 
 };
 
