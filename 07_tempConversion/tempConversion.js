@@ -10,7 +10,7 @@ const convertToFahrenheit = function(temp) {
 
   let tempFahrenheit = temp * 1.8 + 32;
 
-  return tempFahrenheit;
+  return Math.round(tempFahrenheit * 10) / 10;
 
 };
 
