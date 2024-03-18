@@ -2,9 +2,24 @@ const sumAll = function(firstNumber, secondNumber) {
 
     let sum = 0;
 
-    for(i = firstNumber; i <= secondNumber; i++) {
+    if(secondNumber < firstNumber) {
 
-        sum += i;
+        let newSecondNumber = firstNumber;
+        let newFirstNumber = secondNumber;
+
+        for(i = newFirstNumber; i <= newSecondNumber; i++) {
+
+            sum += i;
+    
+        }
+
+    } else {
+
+        for(i = firstNumber; i <= secondNumber; i++) {
+
+            sum += i;
+
+        }
 
     }
 
