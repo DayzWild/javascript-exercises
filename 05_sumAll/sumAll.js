@@ -13,6 +13,10 @@ const sumAll = function(firstNumber, secondNumber) {
     
         }
 
+    } else if (firstNumber < 0 || secondNumber < 0) {
+        
+        return "ERROR";
+
     } else {
 
         for(i = firstNumber; i <= secondNumber; i++) {
